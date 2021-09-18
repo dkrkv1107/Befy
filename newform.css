@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@300&display=swap');
+*{
+	margin: 0;
+	padding: 0;
+	font-family: Urbanist;
+}
+body{
+    background-image: url('/jeremy-bishop-G9i_plbfDgk-unsplash.jpg');
+
+}
+.right{
+	background-color: #6246EA;
+	height: 100vh;
+	border-radius: 25px 0px 0px 25px;
+	width: 38vw;
+
+}
+.main{
+	display: flex;
+	justify-content: space-between;
+}
+.logo{
+	position: absolute;
+width: 80px;
+height: 29px;
+left: 142px;
+top: 45px;
+}
+.left{
+	display: flex;
+    flex-direction: column-reverse;
+}
+.slider{
+    margin-top: 28vh;
+
+}
+.box{
+
+    margin-left: 142px;
+}
+span.hand{
+	color: orange;
+}
+.right h2{
+	width: 30vw;
+	font-family: Urbanist;
+font-style: normal;
+font-weight: 600;
+font-size: 57px;
+line-height: 68px;
+display: flex;
+align-items: center;
+letter-spacing: -0.02em;
+color: white;
+margin-top: -53vh;
+margin-left: 73px;
+
+}
+.right h1{
+color: white;
+font-family: Urbanist;
+font-style: normal;
+font-weight: 600;
+font-size: 20px;
+line-height: 24px;
+margin-top: 305px;
+margin-left: 45px;
+
+}
+button{
+	background-color: #6246EA;
+    border-radius: 8px;
+    outline: none;
+    border: 0px;
+}
+.footer a{
+    color: black;
+    text-decoration: none;
+}
+.footer
+{
+
+left: 142px;
+position: relative;
+font-family: Urbanist;
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 19px;
+
+color: #000000;
+
+opacity: 0.94;
+}
+.choice p{
+    
+
+font-family: Urbanist;
+font-style: normal;
+font-weight: 600;
+font-size: 18px;
+line-height: 120%;
+
+
+}
+.box1{
+	width: 301px;
+height: 152px;
+background-color: #6246EA;
+border-radius: 15px;
+
+}
+.box2{
+	width: 301px;
+height: 152px;
+background-color: orange;
+
+border-radius: 15px;
+
+}
+@media screen and (max-width : 1025px) {
+  .right {
+    display: none;
+  }
+}
+@media screen and (min-width : 1025px) and (max-width : 1205px) {
+  h2 b {
+    font-size: 50px;  }
+}

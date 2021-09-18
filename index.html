@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Form</title>
+	<style>
+        @import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@300&display=swap');
+        </style>
+        <link rel="stylesheet" href="newform.css"> 
+        <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css"
+        integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous">
+</head>
+<body>
+
+<div class="main">
+ <div class="left">
+	<div class="logo">
+        <a href="#">
+        <img src="./Befy wordmark 1.svg" alt="" srcset="">
+        </a>
+      </div>
+      <div class="footer">
+       <a href="#"><b>Privacy Policy &nbsp;</b></a>
+       <a href="#"><b>Terms of Use</b></a>
+    </div>
+
+            <div class="slider" id="sld">
+
+                <div class="box">
+
+                    <div class="a" id="hide">
+
+                        <p class="a">Hey there 👋</p>
+                        <h1><span class="hand">1&#8594;</span> Your Full Name?</h1>
+                        <input type="text" class="form-control" id="usr" style="width: 50%; height: 50px; border: none; border-bottom: 1px solid black; " placeholder="Enter your name here">
+                        <br>
+
+                        <button type="button" class="btn btn-primary btn-lg" onclick="fNext()"
+                            style="width: 100px; height: 50px; font-size: large; margin-top: 20px;">Next &#10003;</button>
+                            <p style="font-size: 15px; ">press <strong>Enter ↵</strong></p>
+
+                    </div>
+                </div>
+
+
+                <div class="box">
+                    <div class="a">
+                        <div class="row">
+                            <h1> <span class="hand">2&#8594;</span>Challenges faced by you as a creator?</h1>
+                            <br>
+                         <div class="choice" style="padding: 15px;">
+                            <div class="choice1">
+                                <img src="./Befy Onboarding icons/Active state icons/Tracking-active.svg" alt="" srcset=""
+                                style="position:relative;right: -1.33%;bottom: -13.67%;">
+                                <p style="top: -25%; position: relative; left:13%;">Tracking income &
+                                    expense</p>
+                            </div>
+                            
+                            <div class="choice2">
+                                <img src="./Befy Onboarding icons/Normal state icons/Revenue.svg" alt="" srcset=""
+                                style="position: relative; width: 32px;
+                                height: 32px;">
+                                <p style="color: black; top: -36%; position: relative; left:13%">Revenue split for collabs
+                                    with other creators</p>
+                            </div>
+                            <div class="choice3">
+                                <img src="./Befy Onboarding icons/Normal state icons/Earning.svg" alt="" srcset=""
+                                style="position:relative;width: 32px;height: 32px; bottom: -13%;
+                                right: -3%;">
+                                <p style="color: black; top: -25%; position: relative; left:18%; ">Earning stats &
+                                    Analytics</p>
+                            </div>
+                            <div class="choice4">
+                                <img src="./Befy Onboarding icons/Normal state icons/Collaboration.svg" alt="" srcset=""
+                                style="position:relative; width: 32px;
+                                height: 32px; right: -3%;
+                                ">
+                                <p style="color:black; top: -40%; position: relative; left:19%">Collaboration with
+                                    creators/brands</p>
+                            </div>
+                            <button type="button" class="btn btn-primary btn-lg" onclick="fNext()"
+                            style="width: 100px; height: 50px; font-size: large; margin-top:-19rem; margin-top: 20px;">Next&#10003;</button>
+                            <p style="">press <strong>Enter ↵</strong></p>
+                        </div>
+                    </div>
+                </div>
+
+                </div>
+                <br>
+                
+                <br>
+
+            </div>
+
+</div>
+	<div class="right">
+		<img class="image" src="./Group 1000001797.png" alt="" srcset="" style="height: 80%; width: 38vw  ">
+         <h2><b>India’s first
+            creator centric
+            banking</b></h2>
+        <h1>#JOINBEFY</h1>
+	</div>
+</div>
+<script>
+
+        var showed_box = 0;
+
+        function fNext() {
+
+            showed_box += -500;
+
+            if (showed_box < -2000)
+                showed_box = 0;
+
+            document.getElementById('sld').style.transform = "translateY(" + showed_box + "px)";
+        }
+
+        function fPrevious() {
+
+            showed_box += 500;
+
+            if (showed_box > 0)
+                showed_box = -2000;
+
+            document.getElementById('sld').style.transform = "translateY(" + showed_box + "px)";
+
+        }
+
+    </script>
+</body>
+</html>
